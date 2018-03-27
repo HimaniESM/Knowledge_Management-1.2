@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="document_viewer_audit=all,global_search_config_handler=KnowledgeArticle,all_tables.text_index_translations=true,attachment_index=true,text_index_attachment_displayed=true,text_index_enable_idf=true,synch_attachments=true,use_document_viewer=true,text_index_filter_junk=false" audit="true" label="Knowledge" max_length="40" name="kb_knowledge" text_index="true" type="collection">
+        <element label="Knowledge Reviewer" max_length="32" name="x_infte_esm_it_kno_knowledge_reviewer" reference="sys_user_grmember" reference_qual="group=839bea264fb0130053c240f18110c767^EQ" reference_qual_condition="group=839bea264fb0130053c240f18110c767^EQ" type="reference"/>
+    </element>
+</database>

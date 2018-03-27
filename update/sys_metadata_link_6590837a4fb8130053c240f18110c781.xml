@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ccf5f6aa4fb0130053c240f18110c795</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="kb_category">
+    <kb_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <full_category>Applications / ServiceNow</full_category>
+        <label>ServiceNow</label>
+        <parent_id>7795f6aa4fb0130053c240f18110c7ae</parent_id>
+        <parent_table>kb_category</parent_table>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 12:51:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ccf5f6aa4fb0130053c240f18110c795</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 12:51:58</sys_updated_on>
+        <value>servicenow</value>
+    </kb_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=ccf5f6aa4fb0130053c240f18110c795"/>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-16 08:16:49</sys_created_on>
+        <sys_id>6590837a4fb8130053c240f18110c781</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ServiceNow</sys_name>
+        <sys_package display_value="ESM IT Knowledge Management" source="x_infte_esm_it_kno">05cf162e4f70130053c240f18110c734</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ESM IT Knowledge Management">05cf162e4f70130053c240f18110c734</sys_scope>
+        <sys_update_name>sys_metadata_link_6590837a4fb8130053c240f18110c781</sys_update_name>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-16 08:16:49</sys_updated_on>
+        <tablename>kb_category</tablename>
+    </sys_metadata_link>
+</record_update>

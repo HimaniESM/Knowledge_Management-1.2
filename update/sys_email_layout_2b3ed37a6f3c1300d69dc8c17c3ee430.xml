@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_layout">
+    <sys_email_layout action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <advanced_layout/>
+        <description>email template of KM notification</description>
+        <layout><![CDATA[<table height="5" style="width: 725px; background-color: #1182f2;">
+<tbody>
+<tr>
+<td><img src="sys_attachment.do?sys_id=6c220eff4ff4930053c240f18110c718" vspace="" hspace="" border="" align="baseline" alt="" title="" width="130" height="30" style="align: baseline;" /></td>
+</tr>
+</tbody>
+</table>
+<table width="725" height="9" style="background-color: #a3a2a2; height: 21px;">
+<tbody>
+<tr>
+<td>${mail_script:esm_subject}</td>
+</tr>
+</tbody>
+</table>
+<p>${notification:body}<br /><span style="text-decoration-line: underline;"><strong>Knowledge Article Summary:</strong></span></p>
+<p>&nbsp; &nbsp; &nbsp;&nbsp;Topic &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :${topic}<br />&nbsp; &nbsp; &nbsp; Status &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:${workflow_state}<br />&nbsp; &nbsp; &nbsp; Title &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:${short_description}&nbsp;<br />&nbsp; &nbsp; &nbsp; Valid To &nbsp; &nbsp; &nbsp;:${valid_to}<br />&nbsp; &nbsp; &nbsp; Category &nbsp; &nbsp; :${kb_category}</p>
+<p><strong>Click on ${URI_REF}&nbsp;for further details and/or to take actions.</strong></p>
+<p><strong><span style="text-decoration-line: underline;">Quick Links :</span></strong></p>
+<p>To check &nbsp;all Knowledge articles,<span style="color: #ff9900;"><em><a title="CLICK HERE" href="https://infosysdemosvs6.service-now.com/nav_to.do?uri=%2Fkb_knowledge_list.do%3Fsysparm_userpref_module%3D2180b621ff0131009b20ffffffffffc5%26sysparm_clear_stack%3Dtrue" style="color: #ff9900;">CLICK HERE</a></em></span></p>
+<p><strong>Regards,</strong><br /><strong>Knowledge Management Team</strong></p>
+<hr style="width: 725px; float: left;" />
+<p></p>
+<table width="725" height="65" style="background-color: #1b7ee0; height: 38px;">
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;">For any query please contact to Service Desk :9999 999 999</span></p>
+<p><span style="color: #ffffff;">This is an automated message. Please do not reply.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>${NOTIF_UNSUB} &nbsp;| ${NOTIF_PREFS}</p>
+<p></p>]]></layout>
+        <name>ESM Km Email Layout</name>
+        <sys_class_name>sys_email_layout</sys_class_name>
+        <sys_created_by>Manjeet_kumar</sys_created_by>
+        <sys_created_on>2018-03-16 10:27:41</sys_created_on>
+        <sys_id>2b3ed37a6f3c1300d69dc8c17c3ee430</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>ESM Km Email Layout</sys_name>
+        <sys_package display_value="ESM IT Knowledge Management" source="x_infte_esm_it_kno">05cf162e4f70130053c240f18110c734</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ESM IT Knowledge Management">05cf162e4f70130053c240f18110c734</sys_scope>
+        <sys_update_name>sys_email_layout_2b3ed37a6f3c1300d69dc8c17c3ee430</sys_update_name>
+        <sys_updated_by>Manjeet_kumar</sys_updated_by>
+        <sys_updated_on>2018-03-19 10:30:40</sys_updated_on>
+    </sys_email_layout>
+</record_update>

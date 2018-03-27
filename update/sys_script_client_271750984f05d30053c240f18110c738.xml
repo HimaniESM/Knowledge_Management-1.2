@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Transform UI actions of knowledge table</description>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>Transform UI actions</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    //Change the color of the 'Approve' button to blue
+    transformButton('publish_knowledge', '#6495ED', 'black', 'icon-success-circle');
+    //Change the color of the 'Reject' button to brick red
+    transformButton('recall', '#B22222', 'black', 'icon-error-circle');
+    //Change the color of the 'Info' button to green
+    transformButton('retire', '#008000', 'black', 'icon-stop-watch');
+    //Change the color of the 'Warning' button to peach
+    transformButton('search_for_duplicates', '#FFDAB9', 'black', 'icon-info');
+	//Change the color of the 'Warning' button to red
+	transformButton('sysverb_delete', '#FF0000', 'black', 'icon-error-circle');
+	//Change the color of the 'Warning' button to tomato red
+	transformButton('sysverb_update', '#FF6347', 'black', 'icon-upload');
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-20 12:51:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>271750984f05d30053c240f18110c738</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Transform UI actions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ESM IT Knowledge Management" source="x_infte_esm_it_kno">05cf162e4f70130053c240f18110c734</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ESM IT Knowledge Management">05cf162e4f70130053c240f18110c734</sys_scope>
+        <sys_update_name>sys_script_client_271750984f05d30053c240f18110c738</sys_update_name>
+        <sys_updated_by>Sushil Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-23 06:44:29</sys_updated_on>
+        <table>kb_knowledge</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Impersonate the user: Amit Kumar with user Id: Amit Kumar</description>
+        <display_name>Impersonate</display_name>
+        <inputs/>
+        <order>21</order>
+        <step_config display_value="Impersonate">071ee5b253331200040729cac2dc348d</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>Amit_Kumar</sys_created_by>
+        <sys_created_on>2018-03-22 12:11:02</sys_created_on>
+        <sys_id>b1af6e3c6f091700d69dc8c17c3ee41d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Impersonate</sys_name>
+        <sys_package display_value="ESM IT Knowledge Management" source="x_infte_esm_it_kno">05cf162e4f70130053c240f18110c734</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ESM IT Knowledge Management">05cf162e4f70130053c240f18110c734</sys_scope>
+        <sys_update_name>sys_atf_step_b1af6e3c6f091700d69dc8c17c3ee41d</sys_update_name>
+        <sys_updated_by>Amit Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-26 09:50:46</sys_updated_on>
+        <table/>
+        <test display_value="Knowledge Management-1">9de0b7b64f3c130053c240f18110c7d8</test>
+        <timeout/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=b1af6e3c6f091700d69dc8c17c3ee41d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>b1af6e3c6f091700d69dc8c17c3ee41d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Amit_Kumar</sys_created_by>
+        <sys_created_on>2018-03-22 12:11:04</sys_created_on>
+        <sys_id>2bbfee3c6f091700d69dc8c17c3ee448</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Amit_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-22 12:11:04</sys_updated_on>
+        <value>27120eaa6fb01300d69dc8c17c3ee4e6</value>
+        <variable display_value="">586e2c4253e0220002c6435723dc3415</variable>
+    </sys_variable_value>
+</record_update>

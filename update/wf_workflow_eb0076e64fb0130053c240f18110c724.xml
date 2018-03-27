@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"subflows":["02be08a4eb5221007128a5fc5206fe12"],"stages":{"5d290b664ff0130053c240f18110c79b":{"stageId":"5d290b664ff0130053c240f18110c79b","order":100,"duration":"","name":"Draft","value":"draft"},"d9290b664ff0130053c240f18110c79b":{"stageId":"d9290b664ff0130053c240f18110c79b","order":200,"duration":"","name":"Review","value":"review"}},"ends":["e9290b664ff0130053c240f18110c7a0"],"activities":{"6929cb664ff0130053c240f18110c72d":"5d290b664ff0130053c240f18110c79b","a9290b664ff0130053c240f18110c79f":"5d290b664ff0130053c240f18110c79b","a5290b664ff0130053c240f18110c7a1":"d9290b664ff0130053c240f18110c79b"}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Legacy">007c2f021b020100adca1e094f0713b4</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>Can be used as a sub-flow, this workflow will handle the submission of an article for approval.</description>
+        <expected_sequences>6929cb664ff0130053c240f18110c72d,a5290b664ff0130053c240f18110c7a1,59290b664ff0130053c240f18110c79c,e9290b664ff0130053c240f18110c7a0</expected_sequences>
+        <expected_time/>
+        <expected_time_type/>
+        <full_sequences>6929cb664ff0130053c240f18110c72d,a5290b664ff0130053c240f18110c7a1,59290b664ff0130053c240f18110c79c,a9290b664ff0130053c240f18110c79f,e9290b664ff0130053c240f18110c7a0</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Knowledge - Approval Published (ESM)</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>workflow_state</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">6929cb664ff0130053c240f18110c72d</start>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:43</sys_created_on>
+        <sys_id>51290b664ff0130053c240f18110c79a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 17:04:30</sys_updated_on>
+        <table>kb_knowledge</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Knowledge - Approval Published (ESM)">eb0076e64fb0130053c240f18110c724</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Can be used as a sub-flow, this workflow will handle the submission of an article for approval.</description>
+        <name>Knowledge - Approval Published (ESM)</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 12:26:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eb0076e64fb0130053c240f18110c724</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Knowledge - Approval Published (ESM)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ESM IT Knowledge Management" source="x_infte_esm_it_kno">05cf162e4f70130053c240f18110c734</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ESM IT Knowledge Management">05cf162e4f70130053c240f18110c734</sys_scope>
+        <sys_update_name>wf_workflow_eb0076e64fb0130053c240f18110c724</sys_update_name>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 12:29:46</sys_updated_on>
+        <table>kb_knowledge</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Draft</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:43</sys_created_on>
+        <sys_id>5d290b664ff0130053c240f18110c79b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:43</sys_updated_on>
+        <value>draft</value>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Pending retirement</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>400</order>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>d1290b664ff0130053c240f18110c79c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>pending_retirement</value>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Published</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>300</order>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>51290b664ff0130053c240f18110c79c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>published</value>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Retired</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>500</order>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>dd290b664ff0130053c240f18110c79b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>retired</value>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Review</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>200</order>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:43</sys_created_on>
+        <sys_id>d9290b664ff0130053c240f18110c79b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:43</sys_updated_on>
+        <value>review</value>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - User">35433da80a0a029a0028c639a1e51eb4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Approval Knowledge Base Management</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Review">d9290b664ff0130053c240f18110c79b</stage>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a5290b664ff0130053c240f18110c7a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+        <x>272</x>
+        <y>29</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a5290b664ff0130053c240f18110c7a1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2129cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2129cb664ff0130053c240f18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2529cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2929cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2d29cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6129cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6529cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6929cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6929cb664ff0130053c240f18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6d29cb664ff0130053c240f18110c728</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6d29cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a129cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>${x_infte_esm_it_kno_knowledge_reviewer.user}</value>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a529cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a529cb664ff0130053c240f18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a929cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ad290b664ff0130053c240f18110c7a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ad29cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e129cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e129cb664ff0130053c240f18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>answer = new KBWorkflow().getApprovers(current);</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e529cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e9290b664ff0130053c240f18110c7a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e929cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ed29cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ad29cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6d29cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a529cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6929cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a929cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e9290b664ff0130053c240f18110c7a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a529cb664ff0130053c240f18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2d29cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a129cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>${x_infte_esm_it_kno_knowledge_reviewer.user}</value>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2929cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6529cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2129cb664ff0130053c240f18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e529cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e929cb664ff0130053c240f18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6129cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2529cb664ff0130053c240f18110c72b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2129cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6929cb664ff0130053c240f18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e129cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ed29cb664ff0130053c240f18110c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6d29cb664ff0130053c240f18110c728</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ad290b664ff0130053c240f18110c7a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5290b664ff0130053c240f18110c7a1</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e129cb664ff0130053c240f18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>answer = new KBWorkflow().getApprovers(current);</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approval Knowledge Base Management">a5290b664ff0130053c240f18110c7a1</activity>
+        <condition>activity.result == 'approved'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Approved</name>
+        <order>1</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6129cb664ff0130053c240f18110c72d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approval Knowledge Base Management">a5290b664ff0130053c240f18110c7a1</activity>
+        <condition>activity.result == 'skipped'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>delete</name>
+        <order>3</order>
+        <short_description>When Clicked on Delete or Update</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e129cb664ff0130053c240f18110c72d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approval Knowledge Base Management">a5290b664ff0130053c240f18110c7a1</activity>
+        <condition>activity.result == 'rejected' </condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Not Approved</name>
+        <order>2</order>
+        <short_description>Approval request was rejected or it was deleted</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ed29cb664ff0130053c240f18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Draft">5d290b664ff0130053c240f18110c79b</stage>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6929cb664ff0130053c240f18110c72d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=6929cb664ff0130053c240f18110c72d"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">6929cb664ff0130053c240f18110c72d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2129cb664ff0130053c240f18110c72e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e9290b664ff0130053c240f18110c7a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+        <x>912</x>
+        <y>281</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e9290b664ff0130053c240f18110c7a0"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Workflow">f1afb4010a0a0b2c00d8f55e2372c728</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Knowledge - Pblish Article</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>59290b664ff0130053c240f18110c79c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+        <x>633</x>
+        <y>17</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=59290b664ff0130053c240f18110c79c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>59290b664ff0130053c240f18110c79c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>11290b664ff0130053c240f18110c79d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>6d290b664ff0130053c240f18110c79d</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>59290b664ff0130053c240f18110c79c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>11290b664ff0130053c240f18110c79d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value>6d290b664ff0130053c240f18110c79d</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Knowledge - Pblish Article">59290b664ff0130053c240f18110c79c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a9290b664ff0130053c240f18110c79d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Move to Draft</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Draft">5d290b664ff0130053c240f18110c79b</stage>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>a9290b664ff0130053c240f18110c79f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+        <x>653</x>
+        <y>235</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a9290b664ff0130053c240f18110c79f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a9290b664ff0130053c240f18110c79f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ed290b664ff0130053c240f18110c79f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a9290b664ff0130053c240f18110c79f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ed290b664ff0130053c240f18110c79f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <value/>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Move to Draft">a9290b664ff0130053c240f18110c79f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>65290b664ff0130053c240f18110c7a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">a9290b664ff0130053c240f18110c79d</condition>
+        <from display_value="Knowledge - Pblish Article">59290b664ff0130053c240f18110c79c</from>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>2929cb664ff0130053c240f18110c72f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <to display_value="End">e9290b664ff0130053c240f18110c7a0</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">65290b664ff0130053c240f18110c7a0</condition>
+        <from display_value="Move to Draft">a9290b664ff0130053c240f18110c79f</from>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6129cb664ff0130053c240f18110c72f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <to display_value="End">e9290b664ff0130053c240f18110c7a0</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2129cb664ff0130053c240f18110c72e</condition>
+        <from display_value="Begin">6929cb664ff0130053c240f18110c72d</from>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6529cb664ff0130053c240f18110c72f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <to display_value="Approval Knowledge Base Management">a5290b664ff0130053c240f18110c7a1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="delete">e129cb664ff0130053c240f18110c72d</condition>
+        <from display_value="Approval Knowledge Base Management">a5290b664ff0130053c240f18110c7a1</from>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6d29cb664ff0130053c240f18110c72f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <to display_value="Move to Draft">a9290b664ff0130053c240f18110c79f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Not Approved">ed29cb664ff0130053c240f18110c72c</condition>
+        <from display_value="Approval Knowledge Base Management">a5290b664ff0130053c240f18110c7a1</from>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>e929cb664ff0130053c240f18110c72f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <to display_value="Move to Draft">a9290b664ff0130053c240f18110c79f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">6129cb664ff0130053c240f18110c72d</condition>
+        <from display_value="Approval Knowledge Base Management">a5290b664ff0130053c240f18110c7a1</from>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>ed29cb664ff0130053c240f18110c72f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:44</sys_updated_on>
+        <to display_value="Knowledge - Pblish Article">59290b664ff0130053c240f18110c79c</to>
+    </wf_transition>
+    <wf_workflow_instance action="INSERT_OR_UPDATE">
+        <activity display_value="Knowledge - Pblish Article">59290b664ff0130053c240f18110c79c</activity>
+        <return_map/>
+        <stage/>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:44</sys_created_on>
+        <sys_id>6d290b664ff0130053c240f18110c79d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:16:08</sys_updated_on>
+        <workflow display_value="Knowledge - Publish Knowledge">02be08a4eb5221007128a5fc5206fe12</workflow>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+    </wf_workflow_instance>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 14:15:43</sys_created_on>
+        <sys_id>15290b664ff0130053c240f18110c79a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 14:15:43</sys_updated_on>
+        <workflow_version display_value="Knowledge - Approval Published (ESM)">51290b664ff0130053c240f18110c79a</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=eb0076e64fb0130053c240f18110c724^sys_id!=51290b664ff0130053c240f18110c79a">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

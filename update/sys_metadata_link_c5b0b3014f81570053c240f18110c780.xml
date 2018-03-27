@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>839bea264fb0130053c240f18110c767</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_group">
+    <sys_user_group action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cost_center/>
+        <default_assignee/>
+        <description/>
+        <email/>
+        <exclude_manager>false</exclude_manager>
+        <include_members>false</include_members>
+        <manager display_value="Kevin_Domadia">37b38aea6fb01300d69dc8c17c3ee443</manager>
+        <name>Knowledge Reviewer Group</name>
+        <parent/>
+        <roles/>
+        <source/>
+        <sys_created_by>Sushil_Kumar</sys_created_by>
+        <sys_created_on>2018-03-15 12:07:02</sys_created_on>
+        <sys_id>839bea264fb0130053c240f18110c767</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sushil_Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-15 12:07:02</sys_updated_on>
+        <type/>
+    </sys_user_group>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>Sushil Kumar</sys_created_by>
+        <sys_created_on>2018-03-23 11:33:22</sys_created_on>
+        <sys_id>c5b0b3014f81570053c240f18110c780</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Knowledge Reviewer Group</sys_name>
+        <sys_package display_value="ESM IT Knowledge Management" source="x_infte_esm_it_kno">05cf162e4f70130053c240f18110c734</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ESM IT Knowledge Management">05cf162e4f70130053c240f18110c734</sys_scope>
+        <sys_update_name>sys_metadata_link_c5b0b3014f81570053c240f18110c780</sys_update_name>
+        <sys_updated_by>Sushil Kumar</sys_updated_by>
+        <sys_updated_on>2018-03-23 11:33:22</sys_updated_on>
+        <tablename>sys_user_group</tablename>
+    </sys_metadata_link>
+</record_update>
